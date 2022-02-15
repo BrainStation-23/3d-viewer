@@ -8,7 +8,7 @@
 [Check the live version!](https://studio-23-xyz.github.io/3d-viewer/)
 
 # Documentation
-See more information in the [Developer Documentation]().
+See more information in the [Developer Documentation](https://github.com/Studio-23-xyz/3d-viewer/wiki).
 
 # Supported file formats
    **import:** .fbx, .obj, .gltf/.glb.
