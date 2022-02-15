@@ -41,3 +41,10 @@ See more information in the [Developer Documentation](https://github.com/Studio-
 # External Libraries
 
 3D Viewer uses these wonderful libraries: [three.js](https://github.com/mrdoob/three.js), [fflate](https://github.com/101arrowz/fflate), [draco](https://github.com/google/draco).
+
+# Sponsors
+
+The following companies, organizations, and individuals support 3D-viewers's ongoing maintenance and development.
+
+<p><a href="https://brainstation-23.com/"><img src="https://brainstation-23.com/wp-content/uploads/2019/02/BS-Logo-Blue_Hr.svg" alt="Automattic" height="undefined"></a></p>
+
