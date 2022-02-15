@@ -1,14 +1,14 @@
 # 3d-viewer
 
-3d viewer (https://moshiuzzaman.github.io/3d-viewer/) is an extension/website to visualize and explore 3D models right in your browser.
+3d viewer (https://studio-23-xyz.github.io/3d-viewer/) is an extension/website to visualize and explore 3D models right in your browser.
 
 # Example
 ![This is an image](https://raw.githubusercontent.com/Siam456/FT_Filees/main/redmi%20image/re.png)
 
-[Check the live version!](https://moshiuzzaman.github.io/3d-viewer/)
+[Check the live version!](https://studio-23-xyz.github.io/3d-viewer/)
 
 # Documentation
-See more information in the [Developer Documentation](https://github.com/moshiuzzaman/3d-viewer/wiki).
+See more information in the [Developer Documentation]().
 
 # Supported file formats
    **import:** .fbx, .obj, .gltf/.glb.
