@@ -1,80 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/ios-filled/50/ffffff/3d.png" />
     <title>Document</title>
-</head>
-<body>
-  <div id="bs__root"></div>
-  <script type="importmap">
-    {
+  </head>
+  <body>
+    <div id="bs__root"></div>
+    <script type="importmap">
+      {
         "imports": {
-            "three": "https://cdn.jsdelivr.net/gh/Siam456/FT_Filees@main/files/three.module.js"
+          "three": "https://cdn.jsdelivr.net/gh/Siam456/FT_Filees@main/files/three.module.js"
         }
-    }
-</script>
-<script>
-  let mainControllerValue = {
-  mainHaeding: "3D viewer plagin",
-  assetLink: 'https://threejsfundamentals.org/threejs/resources/models/cartoon_lowpoly_small_city_free_pack/scene.gltf',
-  controllerVisibility: true,
-  rotation: 10,
-  maxAngleForOrbit: 3.4,
-  minAngleForOrbit: 0,
-  zoomMax: 50,
-  zoomMin: 10,
-  defaultbg: 'green',
-  bgColor: ['skyblue', "#D14250", "#8B9298", "#3888FD", "#198754", "#FFC107"],
-  bgTexrute: [
-      {
-          texture_ft: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/tropic_ft.jpg",
-          texture_bk: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/tropic_bk.jpg",
-          texture_up: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/tropic_up.jpg",
-          texture_dn: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/tropic_dn.jpg",
-          texture_rt: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/tropic_rt.jpg",
-          texture_lf: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/tropic_lf.jpg"
-      },
-      {
-          texture_ft: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/arid2_ft.jpg",
-          texture_bk: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/arid2_bk.jpg",
-          texture_up: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/arid2_up.jpg",
-          texture_dn: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/arid2_dn.jpg",
-          texture_rt: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/arid2_rt.jpg",
-          texture_lf: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/arid2_lf.jpg"
-      },
-      {
-          texture_ft: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/zeus_ft.jpg",
-          texture_bk: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/zeus_bk.jpg",
-          texture_up: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/zeus_up.jpg",
-          texture_dn: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/zeus_dn.jpg",
-          texture_rt: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/zeus_rt.jpg",
-          texture_lf: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/zeus_lf.jpg"
-      },
-  ],
-  htmlRotationSpeedMin: -100,
-  htmlRotationSpeedMax: 100,
-  htmlRotationSpeedStep: 5,
-  htmlRotationSpeedDefaultValue: 10,
+      }
+    </script>
+    <script>
+      let mainControllerValue = {
+        mainHaeding: "3D viewer plagin",
+        assetLink: "https://threejsfundamentals.org/threejs/resources/models/cartoon_lowpoly_small_city_free_pack/scene.gltf",
+        controllerVisibility: true,
+        rotation: 10,
+        maxAngleForOrbit: 3.4,
+        minAngleForOrbit: 0,
+        zoomMax: 50,
+        zoomMin: 10,
+        defaultbg: "green",
+        bgColor: ["skyblue", "#D14250", "#8B9298", "#3888FD", "#198754", "#FFC107"],
+        bgTexrute: [
+          {
+            texture_ft: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/tropic_ft.jpg",
+            texture_bk: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/tropic_bk.jpg",
+            texture_up: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/tropic_up.jpg",
+            texture_dn: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/tropic_dn.jpg",
+            texture_rt: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/tropic_rt.jpg",
+            texture_lf: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/tropic_lf.jpg",
+          },
+          {
+            texture_ft: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/arid2_ft.jpg",
+            texture_bk: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/arid2_bk.jpg",
+            texture_up: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/arid2_up.jpg",
+            texture_dn: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/arid2_dn.jpg",
+            texture_rt: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/arid2_rt.jpg",
+            texture_lf: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/arid2_lf.jpg",
+          },
+          {
+            texture_ft: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/zeus_ft.jpg",
+            texture_bk: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/zeus_bk.jpg",
+            texture_up: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/zeus_up.jpg",
+            texture_dn: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/zeus_dn.jpg",
+            texture_rt: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/zeus_rt.jpg",
+            texture_lf: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/zeus_lf.jpg",
+          },
+        ],
+        htmlRotationSpeedMin: -100,
+        htmlRotationSpeedMax: 100,
+        htmlRotationSpeedStep: 5,
+        htmlRotationSpeedDefaultValue: 10,
 
-  htmlRotationtopLimiteMin: 1.6,
-  htmlRotationtopLimiteMax: 3.2,
-  htmlRotationBottonLimiteMin: 0,
-  htmlRotationBottonLimiteMax: 1.6,
-  htmlRotationLimiteStep: 0.2,
-  htmlRotationtopLimiteDefaultValue: 3.1,
-  htmlRotationBottonLimiteDefaultValue: 0,
+        htmlRotationtopLimiteMin: 1.6,
+        htmlRotationtopLimiteMax: 3.2,
+        htmlRotationBottonLimiteMin: 0,
+        htmlRotationBottonLimiteMax: 1.6,
+        htmlRotationLimiteStep: 0.2,
+        htmlRotationtopLimiteDefaultValue: 3.1,
+        htmlRotationBottonLimiteDefaultValue: 0,
 
-  htmlZoomInMin: -10,
-  htmlZoomInMax: 10,
-  htmlZoomOutMin: 50,
-  htmlZoomOutMax: 90,
-  zoomStape: 2,
-  htmlZoomInDefaultValue: 10,
-  htmlZoomOutDefaultValue: 50,
-}
-</script>
+        htmlZoomInMin: -10,
+        htmlZoomInMax: 10,
+        htmlZoomOutMin: 50,
+        htmlZoomOutMax: 90,
+        zoomStape: 2,
+        htmlZoomInDefaultValue: 10,
+        htmlZoomOutDefaultValue: 50,
+      };
+    </script>
 
-<script type="module" src="https://cdn.jsdelivr.net/gh/moshiuzzaman/CDN@master/three.min.0.2.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/gh/moshiuzzaman/CDN@master/three.min.0.2.js"></script>
+  </body>
 </html>
