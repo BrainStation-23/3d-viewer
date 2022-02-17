@@ -14,8 +14,8 @@ See more information in the [Developer Documentation](https://github.com/Studio-
 
 # Supported file formats
 
-**import:** .fbx, .obj, .gltf/.glb.
-**Export:** png.
+- **import:** .fbx, .obj, .gltf/.glb.
+- **Export:** png.
 
 # Features
 
