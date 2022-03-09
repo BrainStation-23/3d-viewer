@@ -1,6 +1,6 @@
 # 3d-viewer
 
-3d viewer (brainstation-23.github.io/3d-viewer) is an extension/website to visualize and explore 3D models right in your browser.
+3d viewer [brainstation-23.github.io/3d-viewer](brainstation-23.github.io/3d-viewer) is an extension/website to visualize and explore 3D models right in your browser.
 
 # Example
 
