@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/ios-filled/50/ffffff/3d.png" />
-    <title>Document</title>
+    <title>3D Viewer</title>
+    <meta charset="utf-8" />
   </head>
+
   <body>
-    <div id="bs__root"></div>
+    <div id="bs_3D_viewer_root"></div>
+
+    <script async src="https://ga.jspm.io/npm:es-module-shims@0.10.1/dist/es-module-shims.min.js"></script>
+
     <script type="importmap">
       {
         "imports": {
@@ -16,19 +17,43 @@
         }
       }
     </script>
+
     <script>
       let mainControllerValue = {
-        mainHaeding: "3D viewer plagin",
+        mainHeading: "3D viewer",
         assetLink: "https://threejsfundamentals.org/threejs/resources/models/cartoon_lowpoly_small_city_free_pack/scene.gltf",
         controllerVisibility: true,
-        rotation: 10,
+
         maxAngleForOrbit: 3.4,
         minAngleForOrbit: 0,
+        defaultbg: "skyblue",
+
+        rotation: true,
+        rotationSpeedMin: -100,
+        rotationSpeedMax: 100,
+        rotationSpeedStep: 5,
+        rotationSpeedDefaultValue: 10,
+        rotationtopLimitMin: 1.6,
+        rotationtopLimitMax: 3.2,
+        rotationBottomLimitMin: 0,
+        rotationBottomLimitMax: 1.6,
+        rotationLimitStep: 0.2,
+        rotationtopLimitDefaultValue: 3.1,
+        rotationBottomLimitDefault: 0,
+
+        zoom: true,
         zoomMax: 50,
         zoomMin: 10,
-        defaultbg: "green",
+        zoomInMin: -10,
+        zoomInMax: 10,
+        zoomOutMin: 50,
+        zoomOutMax: 90,
+        zoomStape: 2,
+        zoomInDefaultValue: 10,
+        zoomOutDefaultValue: 50,
+
         bgColor: ["skyblue", "#D14250", "#8B9298", "#3888FD", "#198754", "#FFC107"],
-        bgTexrute: [
+        bgTexture: [
           {
             texture_ft: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/tropic_ft.jpg",
             texture_bk: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/tropic_bk.jpg",
@@ -54,29 +79,9 @@
             texture_lf: "https://raw.githubusercontent.com/Siam456/FT_Filees/main/backgroundTexture/zeus_lf.jpg",
           },
         ],
-        htmlRotationSpeedMin: -100,
-        htmlRotationSpeedMax: 100,
-        htmlRotationSpeedStep: 5,
-        htmlRotationSpeedDefaultValue: 10,
-
-        htmlRotationtopLimiteMin: 1.6,
-        htmlRotationtopLimiteMax: 3.2,
-        htmlRotationBottonLimiteMin: 0,
-        htmlRotationBottonLimiteMax: 1.6,
-        htmlRotationLimiteStep: 0.2,
-        htmlRotationtopLimiteDefaultValue: 3.1,
-        htmlRotationBottonLimiteDefaultValue: 0,
-
-        htmlZoomInMin: -10,
-        htmlZoomInMax: 10,
-        htmlZoomOutMin: 50,
-        htmlZoomOutMax: 90,
-        zoomStape: 2,
-        htmlZoomInDefaultValue: 10,
-        htmlZoomOutDefaultValue: 50,
       };
     </script>
 
-    <script type="module" src="https://cdn.jsdelivr.net/gh/moshiuzzaman/CDN@master/three.min.0.2.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/gh/moshiuzzaman/CDN@master/bsagorasdk-1.8.min.js"></script>
   </body>
 </html>
