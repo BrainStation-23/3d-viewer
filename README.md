@@ -1,6 +1,6 @@
 # 3d-viewer
 
-3d viewer (https://studio-23-xyz.github.io/3d-viewer/) is an extension/website to visualize and explore 3D models right in your browser.
+3d viewer [brainstation-23.github.io/3d-viewer](brainstation-23.github.io/3d-viewer) is an extension/website to visualize and explore 3D models right in your browser.
 
 # Example
 
@@ -14,7 +14,8 @@ See more information in the [Developer Documentation](https://github.com/Studio-
 
 # Supported file formats
 
-**import:** .fbx, .obj, .gltf/.glb.
+- **import:** .fbx, .obj, .gltf/.glb.
+- **Export:** png.
 
 # Features
 
