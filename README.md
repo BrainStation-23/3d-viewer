@@ -6,7 +6,7 @@
 
 ![This is an image](https://github.com/Studio-23-xyz/3d-viewer/raw/master/re.png)
 
-[Check the live version!](https://studio-23-xyz.github.io/3d-viewer/)
+[Check the live version!](https://brainstation-23.github.io/3d-viewer/)
 
 # Documentation
 
